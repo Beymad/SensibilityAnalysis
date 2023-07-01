@@ -15,7 +15,9 @@ import itertools
 import numpy as np
 from numpy import random as rng
 import matplotlib.pyplot as plt
+from matplotlib import ticker
 import seaborn as sns
+import pandas as pd
 
 # Local imports
 import SensitivityAnalysisModels as SAModels
@@ -36,6 +38,9 @@ HARRIS_VAR = 0.1
 
 H_VMIN = 1-HARRIS_VAR
 H_VMAX = 1+HARRIS_VAR
+
+H_GLOBAL_VMIN = [0.9,0.7,0.9]
+H_GLOBAL_VMAX = [1.1,1.3,1.1]
 
 MODEL_INPUT_RANGE = np.linspace(start=(H_VMIN-1), stop=(H_VMAX-1), num=OAT_SIM_SIZE+1, endpoint=True)
 GLOBAL_SIM_SIZE = 10000
@@ -235,7 +240,7 @@ def createConditionalDensitiesPlot(resultBins,totalResults,fName):
     ax = plt.gca()
     ax.spines['top'].set_visible(True)
     ax.spines['right'].set_visible(True)
-    ax.set_title('Densidade Condicional com {} $bins$'.format(numBins))
+    ax.set_title('Densidade Condicional com {} partições'.format(numBins))
 #    fig.set(xlim=(np.mean(totalResults)*H_VMIN*0.7,np.mean(totalResults)*H_VMAX*1.3))
     fig.savefig(fName)
     
@@ -344,10 +349,8 @@ def runGlobalAnalysis():
         saveToLog('./MonteCarloSims/HarrisMonteCarlo_Inputs.txt', 'read')
         if montecarloInputs.shape[0] != GLOBAL_SIM_SIZE: raise FileNotFoundError
     except FileNotFoundError:
-        montecarloInputs = [0]*len(REFERENCE_VALUES_HARRIS_EOQ)
-        for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
-            montecarloInputs[i] = REFERENCE_VALUES_HARRIS_EOQ[i]*rng.uniform(H_VMIN,H_VMAX,GLOBAL_SIM_SIZE)
-        montecarloInputs[1] = REFERENCE_VALUES_HARRIS_EOQ[1]*rng.uniform(0.7,1.3,GLOBAL_SIM_SIZE)
+        montecarloInputs = [REFERENCE_VALUES_HARRIS_EOQ[i]*rng.uniform(H_GLOBAL_VMIN[i],H_GLOBAL_VMAX[i],GLOBAL_SIM_SIZE) 
+                            for i in range(len(REFERENCE_VALUES_HARRIS_EOQ))]
         montecarloInputs = np.array(montecarloInputs).T
         np.savetxt('./MonteCarloSims/HarrisMonteCarlo_Inputs.txt',montecarloInputs)
         saveToLog('./MonteCarloSims/HarrisMonteCarlo_Inputs.txt', 'write')
@@ -392,13 +395,10 @@ def runGlobalAnalysis():
 
 
 #    curva ecdf/integral = np.cumsum(outHist*np.diff(outBin_edges))
-    inHistBins = [0]*3
+
 
     outHistBins = np.histogram(montecarloResults, density=True, bins='fd')
-    inHistBins = [0]*montecarloInputs.shape[1]
-    for i in range(montecarloInputs.shape[1]):
-        inHistBins[i] = np.histogram(montecarloInputs[:,i], density=True, bins=8)
-    
+    inHistBins = [np.histogram(montecarloInputs[:,i], density=True, bins=8) for i in range(montecarloInputs.shape[1])]
     orderedRelations = [0]*montecarloInputs.shape[1]
 
     if True:
@@ -443,6 +443,29 @@ def runGlobalAnalysis():
 
     for i in range(len(subPartitions)):
         createConditionalDensitiesPlot(subPartitions[i],montecarloResults,'./Results/Global/ConditionalDensity'+str(i)+'.png')
+
+    for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
+
+        ValueInputs = [REFERENCE_VALUES_HARRIS_EOQ[i] 
+                       if index == i else 
+                       REFERENCE_VALUES_HARRIS_EOQ[index]*rng.uniform(H_GLOBAL_VMIN[index],H_GLOBAL_VMAX[index],GLOBAL_SIM_SIZE) 
+                       for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))]
+
+        ValueResults = modeloHarrisEOQ(*ValueInputs)
+
+        sns.displot(pd.DataFrame(data={'conditional':ValueResults, 'base':montecarloResults}), 
+                    kind = 'kde', color = 'black', bw_adjust = 4, fill=True, multiple = 'layer', legend = False)
+#        sns.kdeplot(montecarloResults, color = 'green')
+        ax = plt.gca()
+        tickerFormatter = ticker.ScalarFormatter( useMathText=True )
+        tickerFormatter.set_scientific(True)
+        tickerFormatter.set_powerlimits((-2,3))
+        ax.yaxis.set_major_formatter(tickerFormatter)
+        plt.legend(loc='upper right', labels = [r'$f_{Y}(y)$', r'$f_{Y|X=x_{ref}}(y)$'])
+
+        plt.suptitle('Comparação de densidades \npara a {}ª variável'.format(str(i)))
+
+        plt.savefig('./Results/Global/FixedPointForVar'+str(i)+'.png')
 
 
     return 0
@@ -515,21 +538,22 @@ def createLocalStorage(pName: str = './SensibilityAnalysisStorage', pSubFolders:
 
     return
 
-def saveToLog(fText: str, case: str = None):
+def saveToLog(fText: str, log_case: str = None):
     os.chmod('storageLog.sff', stat.S_IWRITE|stat.S_IREAD)
     currentTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     with open('storageLog.sff', 'a', newline='\n', encoding='utf-8') as log:
         logBegin(log,currentTime)
-        if   case == None:
-            log.write('{} at {}\n'.format(fText,currentTime))
-        elif case == 'read' :
-            log.write('Read {} at {}\n'.format(fText,currentTime))
-        elif case == 'write':
-            log.write('Wrote to {} at {}\n'.format(fText,currentTime))
-        elif case == 'lone':
-            log.write('{}\n'.format(fText))            
-        else:
-            log.write('{} {} at {}\n'.format(case,fText,currentTime))
+        match log_case:
+            case None:
+                log.write('{} at {}\n'.format(fText,currentTime))
+            case 'read' :
+                log.write('Read {} at {}\n'.format(fText,currentTime))
+            case 'write':
+                log.write('Wrote to {} at {}\n'.format(fText,currentTime))
+            case 'lone':
+                log.write('{}\n'.format(fText))            
+            case _:
+                log.write('{} {} at {}\n'.format(log_case,fText,currentTime))
     os.chmod('storageLog.sff', stat.S_IREAD)
     return
 
