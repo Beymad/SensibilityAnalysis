@@ -1,431 +1,270 @@
-Created folder(s) at 2023-06-27 20:24:41
+Created folder(s) at 2023-07-01 22:42:54
 ./MonteCarloSims/
 ./Results/OAT/
 ./Results/Local/
 ./Results/Global/
-Wrote to ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:24:41
-Wrote to ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:24:41
-Wrote to ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:24:41
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:24:43
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:24:43
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:24:44
-Wrote to ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:24:44
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:24:45
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:24:45
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:24:45
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:24:45
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:24:45
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:24:45
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:24:45
-Began logging at 2023-06-27 20:25:47
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:25:47
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:25:47
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:25:47
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:25:48
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:25:49
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:25:50
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:25:50
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:25:51
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:25:51
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:25:51
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:25:51
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:25:51
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:25:52
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:25:52
-Began logging at 2023-06-27 20:26:24
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:26:24
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:26:24
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:26:24
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:26:25
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:26:26
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:26:26
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:26:26
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:26:27
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:26:27
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:26:28
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:26:28
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:26:28
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:26:28
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:26:28
-Began logging at 2023-06-27 20:28:30
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:28:30
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:28:30
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:28:30
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:28:32
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:28:33
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:28:33
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:28:33
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:28:34
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:28:34
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:28:35
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:28:35
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:28:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:28:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:28:35
-Began logging at 2023-06-27 20:33:39
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:33:39
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:33:39
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:33:39
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:33:40
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:33:41
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:33:42
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:33:42
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:33:43
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:33:43
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:33:43
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:33:43
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:33:43
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:33:43
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:33:43
-Began logging at 2023-06-27 20:34:59
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:34:59
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:34:59
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:34:59
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:35:00
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:35:01
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:35:02
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:35:02
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:35:02
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:35:02
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:35:03
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:35:03
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:35:03
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:35:03
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:35:03
-Began logging at 2023-06-27 20:37:44
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 20:37:44
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 20:37:44
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:37:44
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 20:37:46
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 20:37:46
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 20:37:47
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 20:37:47
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 20:37:48
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 20:37:48
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 20:37:49
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 20:37:49
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 20:37:49
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:38:01
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 20:39:44
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:39:55
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 20:39:58
-Code execution took 0:04:33.719650
-Began logging at 2023-06-27 21:17:36
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:17:36
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:17:39
-Began logging at 2023-06-27 21:18:56
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:18:56
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:18:56
-Began logging at 2023-06-27 21:23:33
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:23:33
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:23:33
-Began logging at 2023-06-27 21:24:47
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:24:47
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:24:47
-Began logging at 2023-06-27 21:25:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:25:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:25:48
-Began logging at 2023-06-27 21:28:01
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:28:01
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:28:01
-Began logging at 2023-06-27 21:29:13
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:29:13
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:29:13
-Began logging at 2023-06-27 21:33:28
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:33:28
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:33:28
-Began logging at 2023-06-27 21:34:05
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 21:34:05
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 21:34:05
-Began logging at 2023-06-27 22:10:43
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:10:43
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:10:43
-Code execution took 0:02:51.718105
-Began logging at 2023-06-27 22:18:05
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:18:05
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:18:05
-Began logging at 2023-06-27 22:18:51
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:18:51
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:18:51
-Began logging at 2023-06-27 22:21:21
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:21:21
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:21:21
-Began logging at 2023-06-27 22:22:51
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:22:51
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:22:51
-Began logging at 2023-06-27 22:23:30
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:23:30
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:23:30
-Began logging at 2023-06-27 22:26:01
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:26:01
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:26:01
-Began logging at 2023-06-27 22:26:52
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:26:52
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:26:52
-Began logging at 2023-06-27 22:27:45
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:27:45
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:27:45
-Began logging at 2023-06-27 22:28:25
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:28:25
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:28:25
-Began logging at 2023-06-27 22:28:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:28:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:28:48
-Began logging at 2023-06-27 22:29:27
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:29:27
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:29:27
-Began logging at 2023-06-27 22:32:47
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:32:47
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:32:47
-Began logging at 2023-06-27 22:34:23
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:34:23
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:34:23
-Began logging at 2023-06-27 22:35:02
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:35:02
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:35:02
-Began logging at 2023-06-27 22:35:49
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:35:49
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:35:49
-Began logging at 2023-06-27 22:36:24
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:36:24
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:36:24
-Began logging at 2023-06-27 22:36:54
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 22:36:54
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 22:36:54
-Began logging at 2023-06-27 23:03:14
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:03:14
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:03:14
-Began logging at 2023-06-27 23:03:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:03:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:03:35
-Began logging at 2023-06-27 23:05:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:05:35
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:05:35
-Began logging at 2023-06-27 23:08:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:08:26
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:08:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:08:26
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:08:26
-Began logging at 2023-06-27 23:10:32
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:10:32
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:10:32
-Began logging at 2023-06-27 23:12:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:12:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:12:26
-Began logging at 2023-06-27 23:15:57
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:15:57
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:15:57
-Began logging at 2023-06-27 23:16:55
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:16:55
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:16:55
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:16:55
-Wrote to ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:16:55
-Began logging at 2023-06-27 23:20:06
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:20:06
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:20:06
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:21:03
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:21:11
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-27 23:21:33
-Code execution took 0:01:26.894388
-Began logging at 2023-06-27 23:22:22
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:22:22
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:22:22
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:22:22
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:22:23
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:22:24
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:22:25
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:22:25
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:22:25
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:22:25
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:22:26
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:22:26
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:22:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:22:26
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:22:26
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:22:30
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:22:31
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-27 23:22:32
-Code execution took 0:00:10.281271
-Began logging at 2023-06-27 23:25:57
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:25:57
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:25:57
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:25:57
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:25:59
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:25:59
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:26:00
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:26:00
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:26:01
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:26:01
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:26:02
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:26:02
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:26:02
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:26:02
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:26:02
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:26:05
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:26:06
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-27 23:26:07
-Code execution took 0:00:09.562045
-Began logging at 2023-06-27 23:26:48
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:26:48
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:26:48
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:26:48
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:26:50
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:26:50
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:26:51
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:26:51
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:26:52
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:26:52
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:26:52
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:26:52
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:26:52
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:26:52
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:26:52
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:26:56
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:26:56
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-27 23:26:57
-Code execution took 0:00:08.941001
-Began logging at 2023-06-27 23:35:15
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:35:15
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:35:15
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:35:15
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:35:17
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:35:17
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:35:18
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:35:18
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:35:19
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:35:19
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:35:20
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:35:20
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:35:20
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:35:20
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:35:20
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:36:34
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:37:07
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-27 23:37:15
-Code execution took 0:01:59.568735
-Began logging at 2023-06-27 23:46:44
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:46:44
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:46:44
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:46:44
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:46:45
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:46:46
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:46:47
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:46:47
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:46:48
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:46:48
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:46:48
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:46:48
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:46:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:46:48
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:46:48
-Began logging at 2023-06-27 23:48:46
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:48:46
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:48:46
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:48:46
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:48:47
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:48:48
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:48:49
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:48:49
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:48:49
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:48:49
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:48:50
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:48:50
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:48:50
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:48:50
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:48:50
-Began logging at 2023-06-27 23:51:06
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:51:06
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:51:06
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:51:06
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:51:07
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:51:08
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:51:09
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:51:09
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:51:10
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:51:10
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:51:10
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:51:10
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:51:10
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:51:10
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:51:10
-Began logging at 2023-06-27 23:53:05
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:53:05
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:53:05
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:53:05
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:53:06
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:53:07
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:53:07
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:53:07
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:53:08
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:53:08
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:53:09
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:53:09
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:53:09
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:53:09
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:53:09
-Began logging at 2023-06-27 23:53:51
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:53:51
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:53:51
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:53:51
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:53:53
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:53:54
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:53:54
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:53:54
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:53:55
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:53:55
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:53:56
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:53:56
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:53:56
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:53:56
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:53:56
-Began logging at 2023-06-27 23:58:12
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:58:12
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:58:12
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:58:12
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:58:13
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:58:14
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:58:15
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:58:15
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:58:15
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:58:16
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:58:16
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:58:16
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:58:16
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:58:16
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:58:16
-Began logging at 2023-06-27 23:59:06
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-27 23:59:06
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-27 23:59:06
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:59:06
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-27 23:59:07
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-27 23:59:08
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-27 23:59:09
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-27 23:59:09
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-27 23:59:09
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-27 23:59:09
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-27 23:59:10
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-27 23:59:10
-Wrote to ./Results/Local/DIM.txt at 2023-06-27 23:59:10
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-27 23:59:10
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-27 23:59:10
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-27 23:59:34
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-27 23:59:54
-Began logging at 2023-06-28 00:02:16
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-06-28 00:02:16
-Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-06-28 00:02:16
-Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-28 00:02:16
-Wrote to ./Results/OAT/TornadoDiagram.png at 2023-06-28 00:02:18
-Wrote to ./Results/OAT/SpiderPlot.png at 2023-06-28 00:02:19
-Wrote to ./Results/OAT/graphsVar.png at 2023-06-28 00:02:20
-Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-06-28 00:02:20
-Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-06-28 00:02:21
-Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-06-28 00:02:21
-Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-06-28 00:02:22
-Wrote to ./Results/Local/Elasticity.txt at 2023-06-28 00:02:22
-Wrote to ./Results/Local/DIM.txt at 2023-06-28 00:02:22
-Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-06-28 00:02:22
-Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-06-28 00:02:22
-Wrote to ./Results/Global/ConditionalDensity0.png at 2023-06-28 00:02:34
-Wrote to ./Results/Global/ConditionalDensity1.png at 2023-06-28 00:02:42
-Wrote to ./Results/Global/ConditionalDensity2.png at 2023-06-28 00:02:49
-Code execution took 0:00:32.944526
+Began logging at 2023-07-01 22:42:54
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 22:42:54
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 22:42:54
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 22:42:54
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 22:42:56
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 22:42:57
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 22:42:57
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 22:42:57
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 22:42:58
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 22:42:58
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 22:42:59
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 22:42:59
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 22:42:59
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 22:42:59
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 22:42:59
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 22:43:02
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 22:43:03
+Began logging at 2023-07-01 22:43:26
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 22:43:26
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 22:43:26
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 22:43:26
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 22:43:28
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 22:43:28
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 22:43:29
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 22:43:29
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 22:43:30
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 22:43:30
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 22:43:30
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 22:43:30
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 22:43:30
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 22:43:30
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 22:43:30
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 22:43:33
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 22:43:34
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 22:43:35
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 22:43:36
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 22:43:37
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 22:43:37
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 22:43:39
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 22:43:42
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 22:43:44
+Code execution took 0:00:17.970607
+Began logging at 2023-07-01 23:28:26
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:28:26
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:28:26
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:28:26
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:28:28
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:28:29
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:28:30
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:28:30
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:28:31
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:28:31
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:28:31
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:28:31
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:28:31
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:28:31
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:28:31
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:28:35
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:28:36
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:28:37
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:28:37
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:28:38
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:28:39
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:28:41
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:28:43
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:28:46
+Began logging at 2023-07-01 23:29:10
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:29:10
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:29:10
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:29:10
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:29:12
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:29:12
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:29:13
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:29:13
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:29:14
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:29:14
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:29:14
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:29:14
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:29:14
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:29:14
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:29:14
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:29:18
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:29:19
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:29:20
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:29:21
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:29:21
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:29:22
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:29:24
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:29:26
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:29:28
+Began logging at 2023-07-01 23:31:35
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:31:35
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:31:35
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:31:35
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:31:37
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:31:37
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:31:38
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:31:38
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:31:39
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:31:39
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:31:39
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:31:39
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:31:39
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:31:39
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:31:39
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:31:42
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:31:43
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:31:44
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:31:45
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:31:46
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:31:47
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:31:49
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:31:52
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:31:55
+Began logging at 2023-07-01 23:33:49
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:33:49
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:33:49
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:33:49
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:33:51
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:33:52
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:33:52
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:33:52
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:33:53
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:33:53
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:33:54
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:33:54
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:33:54
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:33:54
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:33:54
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:33:57
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:33:58
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:33:59
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:33:59
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:34:00
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:34:01
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:34:03
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:34:05
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:34:07
+Began logging at 2023-07-01 23:43:02
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:43:02
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:43:02
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:43:02
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:43:04
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:43:05
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:43:06
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:43:06
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:43:07
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:43:07
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:43:08
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:43:08
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:43:08
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:43:08
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:43:08
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:43:12
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:43:13
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:43:14
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:43:15
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:43:16
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:43:18
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:43:20
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:43:24
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:43:26
+Began logging at 2023-07-01 23:58:11
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-01 23:58:11
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-01 23:58:11
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:58:11
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-01 23:58:13
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-01 23:58:13
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-01 23:58:14
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-01 23:58:14
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-01 23:58:15
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-01 23:58:15
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-01 23:58:15
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-01 23:58:15
+Wrote to ./Results/Local/DIM.txt at 2023-07-01 23:58:15
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-01 23:58:16
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-01 23:58:16
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-01 23:58:19
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-01 23:58:20
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-01 23:58:21
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-01 23:58:22
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-01 23:58:22
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-01 23:58:23
+Wrote to ./Results/Global/Phi_0.png at 2023-07-01 23:58:25
+Wrote to ./Results/Global/Phi_1.png at 2023-07-01 23:58:28
+Wrote to ./Results/Global/Phi_2.png at 2023-07-01 23:58:30
+Began logging at 2023-07-02 00:07:39
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-02 00:07:39
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-02 00:07:39
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 00:07:39
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-02 00:07:41
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-02 00:07:43
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-02 00:07:44
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-02 00:07:44
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-02 00:07:45
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 00:07:45
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-02 00:07:46
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-02 00:07:46
+Wrote to ./Results/Local/DIM.txt at 2023-07-02 00:07:46
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-02 00:07:46
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-02 00:07:46
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-02 00:07:53
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-02 00:07:54
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-02 00:07:56
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-02 00:07:57
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-02 00:07:59
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-02 00:08:00
+Wrote to ./Results/Global/Phi_0.png at 2023-07-02 00:08:04
+Wrote to ./Results/Global/Phi_1.png at 2023-07-02 00:08:09
+Wrote to ./Results/Global/Phi_2.png at 2023-07-02 00:08:13
+Code execution took 0:11:29.502675
+Began logging at 2023-07-02 18:26:21
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-02 18:26:21
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-02 18:26:21
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 18:26:21
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-02 18:26:23
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-02 18:26:24
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-02 18:26:25
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-02 18:26:25
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-02 18:26:26
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 18:26:36
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-02 18:26:57
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-02 18:27:01
+Wrote to ./Results/Local/DIM.txt at 2023-07-02 18:27:03
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-02 18:27:05
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-02 18:27:05
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-02 18:27:09
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-02 18:27:11
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-02 18:27:12
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-02 18:27:13
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-02 18:27:13
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-02 18:27:14
+Wrote to ./Results/Global/Phi_0.png at 2023-07-02 18:27:17
+Wrote to ./Results/Global/Phi_1.png at 2023-07-02 18:27:21
+Wrote to ./Results/Global/Phi_2.png at 2023-07-02 18:27:24
+Wrote to ./Results/Global/S_1stOrder.txt at 2023-07-02 18:27:24
+Wrote to ./Results/Global/Deltas.txt at 2023-07-02 18:38:35
+Code execution took 0:12:15.504802
+Began logging at 2023-07-02 18:42:42
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt at 2023-07-02 18:42:42
+Read ./MonteCarloSims/HarrisOAT_outfor1.txt at 2023-07-02 18:42:42
+Read ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 18:42:42
+Wrote to ./Results/OAT/TornadoDiagram.png at 2023-07-02 18:42:43
+Wrote to ./Results/OAT/SpiderPlot.png at 2023-07-02 18:42:43
+Wrote to ./Results/OAT/graphsVar.png at 2023-07-02 18:42:43
+Read ./MonteCarloSims/HarrisLocal_posSens.txt & ./MonteCarloSims/HarrisLocal_negSens.txt at 2023-07-02 18:42:43
+Wrote to ./Results/Local/GeneralizedTornadoDiagram.png at 2023-07-02 18:42:44
+Read ./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt at 2023-07-02 18:42:44
+Wrote to ./Results/Local/DerivativesSpiderPlot.png at 2023-07-02 18:42:44
+Wrote to ./Results/Local/Elasticity.txt at 2023-07-02 18:42:44
+Wrote to ./Results/Local/DIM.txt at 2023-07-02 18:42:44
+Read ./MonteCarloSims/HarrisMonteCarlo_Inputs.txt at 2023-07-02 18:42:44
+Read ./MonteCarloSims/HarrisMonteCarlo_Results.txt at 2023-07-02 18:42:44
+Wrote to ./Results/Global/ConditionalDensity0.png at 2023-07-02 18:42:46
+Wrote to ./Results/Global/ConditionalDensity1.png at 2023-07-02 18:42:47
+Wrote to ./Results/Global/ConditionalDensity2.png at 2023-07-02 18:42:47
+Wrote to ./Results/Global/FixedPointForVar0.png at 2023-07-02 18:42:48
+Wrote to ./Results/Global/FixedPointForVar1.png at 2023-07-02 18:42:48
+Wrote to ./Results/Global/FixedPointForVar2.png at 2023-07-02 18:42:49
+Wrote to ./Results/Global/Phi_0.png at 2023-07-02 18:42:52
+Wrote to ./Results/Global/Phi_1.png at 2023-07-02 18:42:56
+Wrote to ./Results/Global/Phi_2.png at 2023-07-02 18:42:59
+Wrote to ./Results/Global/S_1stOrder.txt at 2023-07-02 18:42:59
+Wrote to ./Results/Global/Deltas.txt at 2023-07-02 18:52:51
+Code execution took 0:10:09.178062

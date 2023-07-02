@@ -103,8 +103,9 @@ def createTornadoDiagram(*resultModels, resultModelRef, fName):     # inp -> um 
 
     return
 
-def createSpiderPlot(*resultModels, modelRange, resultModelRef = 0, fName):                 # modelRange -> se espera que tenha o mesmo tamanho que cada um dos elementos de 
-                                                                                            #               resultModel e que resultModel seja entre (-1;+inf](porcentagem)
+def createSpiderPlot(*resultModels, modelRange, resultModelRef = 0, fName):                 
+    # modelRange -> se espera que tenha o mesmo tamanho que cada um dos elementos de 
+    #               resultModel e que resultModel seja entre (-1;+inf](porcentagem)
     numInputs = len(resultModels)
 
     fig, ax = plt.subplots(layout = 'constrained')
@@ -213,10 +214,12 @@ def createGeneralizedTornadoDiagram(posSensitivities,negSensitivities,fName):
 
     return
 
-def calculateElasticity(*derivatives, resultModelRef, modelInputReference): # derivatives -> um array que contém arrays do Numpy, com os elementos sendo as derivadas. se espera que (derivatives[i])[len((derivatives[i])//2)] seja aproximadamente dg(x0)
-                                                                            # resultModelRef-> o resultado de referência em x0
-                                                                            # modelInputReference -> x0
-                                                                            # out -> gera um gráfico com o Tornado Diagram em fName
+def calculateElasticity(*derivatives, resultModelRef, modelInputReference): 
+    # derivatives -> um array que contém arrays do Numpy, com os elementos sendo as derivadas. 
+    # se espera que (derivatives[i])[len((derivatives[i])//2)] seja aproximadamente dg(x0)
+    # resultModelRef-> o resultado de referência em x0
+    # modelInputReference -> x0
+    # out -> gera um gráfico com o Tornado Diagram em fName
 
     numVars = len(modelInputReference)
     arrElasticity = [0] * numVars
@@ -247,7 +250,6 @@ def createConditionalDensitiesPlot(resultBins,totalResults,fName):
 #    fig.set(xlim=(np.mean(totalResults)*H_VMIN*0.7,np.mean(totalResults)*H_VMAX*1.3))
     fig.savefig(fName)
     
-
     saveToLog(fName,'write')
 
     return
@@ -323,23 +325,19 @@ def runLocalAnalysis():
 
     createGeneralizedTornadoDiagram(resPosSensitivities,resNegSensitivities,'./Results/Local/GeneralizedTornadoDiagram.png')
 
-    resultsHarrisEOQ0 = np.loadtxt('./MonteCarloSims/HarrisOAT_outfor0.txt', dtype = np.float64)
-    resultsHarrisEOQ1 = np.loadtxt('./MonteCarloSims/HarrisOAT_outfor1.txt', dtype = np.float64)
-    resultsHarrisEOQ2 = np.loadtxt('./MonteCarloSims/HarrisOAT_outfor2.txt', dtype = np.float64)
+    resultsHarrisEOQ = [np.loadtxt('./MonteCarloSims/HarrisOAT_outfor'+str(index)+'.txt', dtype = np.float64) for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))]
     saveToLog('./MonteCarloSims/HarrisOAT_outfor0.txt, ./MonteCarloSims/HarrisOAT_outfor1.txt & ./MonteCarloSims/HarrisOAT_outfor2.txt', 'read')
 
     propStep = np.diff(MODEL_INPUT_RANGE)
-    derivativesHarrisEOQ0 = np.diff(resultsHarrisEOQ0) / (propStep*REFERENCE_VALUES_HARRIS_EOQ[0])
-    derivativesHarrisEOQ1 = np.diff(resultsHarrisEOQ1) / (propStep*REFERENCE_VALUES_HARRIS_EOQ[1])   
-    derivativesHarrisEOQ2 = np.diff(resultsHarrisEOQ2) / (propStep*REFERENCE_VALUES_HARRIS_EOQ[2])
+    derivativesHarrisEOQ = [np.diff(resultsHarrisEOQ[index]) / (propStep*REFERENCE_VALUES_HARRIS_EOQ[index]) for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))]
 
-    createSpiderPlot(*[derivativesHarrisEOQ0,derivativesHarrisEOQ1,derivativesHarrisEOQ2],modelRange=MODEL_INPUT_RANGE[0:-1],fName='./Results/Local/DerivativesSpiderPlot.png')
+    createSpiderPlot(*derivativesHarrisEOQ,modelRange=MODEL_INPUT_RANGE[0:-1],fName='./Results/Local/DerivativesSpiderPlot.png')
 
-    arrElast = np.array(calculateElasticity(*[derivativesHarrisEOQ0,derivativesHarrisEOQ1,derivativesHarrisEOQ2],resultModelRef=REFERENCE_RESULTS_HARRIS_EOQ,modelInputReference=REFERENCE_VALUES_HARRIS_EOQ),dtype=np.float64)
-    np.savetxt('./Results/Local/Elasticity.txt', arrElast)
+    arrElast = np.array(calculateElasticity(*derivativesHarrisEOQ,resultModelRef=REFERENCE_RESULTS_HARRIS_EOQ,modelInputReference=REFERENCE_VALUES_HARRIS_EOQ),dtype=np.float64) # derivativesHarrisEOQ = [derivativesHarrisEOQ0,derivativesHarrisEOQ1,derivativesHarrisEOQ2]
+    np.savetxt('./Results/Local/Elasticity.txt', arrElast, fmt='%.8f')
     saveToLog('./Results/Local/Elasticity.txt', 'write')
     arrDIM = calculateDiffImportanceMeasure(arrElast)
-    np.savetxt('./Results/Local/DIM.txt', arrDIM)
+    np.savetxt('./Results/Local/DIM.txt', arrDIM, fmt='%.8f')
     saveToLog('./Results/Local/DIM.txt', 'write')
 
     return 0
@@ -385,20 +383,17 @@ def runGlobalAnalysis():
     covInput = np.concatenate([montecarloResults.reshape((len(montecarloResults),1)), montecarloInputs],axis=1)
     covMatrix = np.cov(covInput,rowvar=False)
 
-    if True:                # Calculate SRC & PEAR
+    # Calculate SRC & PEAR
+    if True:                
         SRC = [0]*len(inpVariances)
         for i in range(len(inpVariances)):
             SRC[i] = lrCoefficients[i]*np.sqrt(inpVariances[i]/outVariance)
-        np.savetxt('./Results/Global/SRC.txt',SRC)
+        np.savetxt('./Results/Global/SRC.txt',SRC, fmt='%.8f')
 
         PEAR = [0]*len(inpVariances)
         for i in range(len(inpVariances)):
             PEAR[i] = covMatrix[0][i+1]/np.sqrt(outVariance*inpVariances[i])
-        np.savetxt('./Results/Global/PEAR.txt',PEAR)
-
-
-#    curva ecdf/integral = np.cumsum(outHist*np.diff(outBin_edges))
-
+        np.savetxt('./Results/Global/PEAR.txt',PEAR, fmt='%.8f')
 
     outHistBins = np.histogram(montecarloResults, density=True, bins='fd')
     inHistBins = [np.histogram(montecarloInputs[:,i], density=True, bins=8) for i in range(montecarloInputs.shape[1])]
@@ -407,7 +402,6 @@ def runGlobalAnalysis():
     if True:
         numVars = montecarloInputs.shape[1]
         arrlinds = []
-        sctLabels = ['Saída Mensal','Custo de pedido','Custo de armazenamento']
         fig, axes = plt.subplots(1,3, layout = 'constrained', sharey=True)
         axes[0].set_ylabel('QOP')
         for i in range(numVars):
@@ -418,7 +412,7 @@ def runGlobalAnalysis():
             orderedRelations[i] = np.concatenate([tempOutputs.reshape(len(tempOutputs),1),tempInputs.reshape(len(tempOutputs),1)],axis=1)
 
             axes[i].scatter(tempInputs, tempOutputs, s = 0.35, alpha = 0.5)
-            axes[i].set_xlabel(sctLabels[i])
+            axes[i].set_xlabel(VAR_LABELS[i])
             plt.setp(axes[i], ylim = (REFERENCE_RESULTS_HARRIS_EOQ*H_VMIN*0.8,REFERENCE_RESULTS_HARRIS_EOQ*H_VMAX*1.2))
         fig.suptitle('Harris EOQ Scatterplots')
         fig.savefig('./Results/Global/Scatterplots.png')
@@ -442,7 +436,6 @@ def runGlobalAnalysis():
                 rel_index = 0
             else: rel_index += 1
         
-
     # densidades condicionais para os bins criados com os histogramas
     for i in range(len(subPartitions)):
         createConditionalDensitiesPlot(subPartitions[i],montecarloResults,'./Results/Global/ConditionalDensity'+str(i)+'.png')
@@ -464,9 +457,9 @@ def runGlobalAnalysis():
         tickerFormatter.set_scientific(True)
         tickerFormatter.set_powerlimits((-2,3))
         ax.yaxis.set_major_formatter(tickerFormatter)
-        plt.legend(loc='upper right', labels = [r'$f_{Y}(y)$', r'$f_{Y|X=x_{ref}}(y)$'])
+        plt.legend(loc='upper right', labels = [r'$f_{Y}(y)$', r'$f_{Y|X_{'+str(i+1)+r'}=x_{ref}}(y)$'])
 
-        ax.set_title('Comparação de densidades \npara a {}ª variável'.format(str(i)))
+        ax.set_title('Comparação de densidades \npara a {}ª variável'.format(str(i+1)))
 
         plt.savefig('./Results/Global/FixedPointForVar'+str(i)+'.png')
         saveToLog('./Results/Global/FixedPointForVar'+str(i)+'.png','write')
@@ -488,7 +481,6 @@ def runGlobalAnalysis():
         fig, ax = plt.subplots(layout='constrained')
         ax.set_xlabel(VAR_LABELS[i])
         ax.set_ylabel('QOP')
-#        ax.set_title(r'$\varphi_{\alpha}(x_{\alpha})$')
         ax.set_title(r'E[$Y|X_{\alpha}=x_{\alpha}$]')
         ax.plot(varSpace,resultantMeans)
 
@@ -498,7 +490,8 @@ def runGlobalAnalysis():
 
         S_ind.append(np.var(resultantMeans)/outVariance)
 
-    print('{} \t Sum:{}'.format(S_ind,np.sum(S_ind)))
+    np.savetxt('./Results/Global/S_1stOrder.txt',S_ind, fmt='%.8f')
+    saveToLog('./Results/Global/S_1stOrder.txt','write')
 
 #   Density based method
     reference_KDE = stats.gaussian_kde(montecarloResults)
@@ -517,8 +510,8 @@ def runGlobalAnalysis():
                                    integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),outMean,11000,limit=50)[0]
                                    )
         deltas[i] = 0.5*np.mean(innerStatistics)
-
-    print(deltas)
+    np.savetxt('./Results/Global/Deltas.txt', deltas, fmt='%.8f')
+    saveToLog('./Results/Global/Deltas.txt','write')
 
     return 0
 
