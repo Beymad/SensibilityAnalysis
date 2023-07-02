@@ -18,6 +18,8 @@ import matplotlib.pyplot as plt
 from matplotlib import ticker
 import seaborn as sns
 import pandas as pd
+import scipy.stats as stats
+import scipy.integrate as integrate
 
 # Local imports
 import SensitivityAnalysisModels as SAModels
@@ -25,6 +27,7 @@ import SensitivityAnalysisModels as SAModels
 # Constantes para os modelos
 REFERENCE_VALUES_HARRIS_EOQ = [1230, 0.0135, 2.15]                  # int, float, float
 INTERESSE_ANUAL_HARRIS_EOQ = 240                                    # 2 * 12 meses/ano * 10% ao mês no modelo de juros simples
+VAR_LABELS = ['Saída Mensal','Custo de pedido','Custo de armazenamento']
 
 REFERENCE_RESULTS_HARRIS_EOQ = SAModels.HarrisEOQ(REFERENCE_VALUES_HARRIS_EOQ[0],
                                                   REFERENCE_VALUES_HARRIS_EOQ[1],
@@ -440,10 +443,11 @@ def runGlobalAnalysis():
             else: rel_index += 1
         
 
-
+    # densidades condicionais para os bins criados com os histogramas
     for i in range(len(subPartitions)):
         createConditionalDensitiesPlot(subPartitions[i],montecarloResults,'./Results/Global/ConditionalDensity'+str(i)+'.png')
 
+    # densidades condicionais com xi = x_ref
     for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
 
         ValueInputs = [REFERENCE_VALUES_HARRIS_EOQ[i] 
@@ -455,7 +459,6 @@ def runGlobalAnalysis():
 
         sns.displot(pd.DataFrame(data={'conditional':ValueResults, 'base':montecarloResults}), 
                     kind = 'kde', color = 'black', bw_adjust = 4, fill=True, multiple = 'layer', legend = False)
-#        sns.kdeplot(montecarloResults, color = 'green')
         ax = plt.gca()
         tickerFormatter = ticker.ScalarFormatter( useMathText=True )
         tickerFormatter.set_scientific(True)
@@ -463,10 +466,59 @@ def runGlobalAnalysis():
         ax.yaxis.set_major_formatter(tickerFormatter)
         plt.legend(loc='upper right', labels = [r'$f_{Y}(y)$', r'$f_{Y|X=x_{ref}}(y)$'])
 
-        plt.suptitle('Comparação de densidades \npara a {}ª variável'.format(str(i)))
+        ax.set_title('Comparação de densidades \npara a {}ª variável'.format(str(i)))
 
         plt.savefig('./Results/Global/FixedPointForVar'+str(i)+'.png')
+        saveToLog('./Results/Global/FixedPointForVar'+str(i)+'.png','write')
 
+    # phi_a(x_a)
+    S_ind = []
+    for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
+        varSpace = REFERENCE_VALUES_HARRIS_EOQ[i] * np.linspace(H_GLOBAL_VMIN[i],H_GLOBAL_VMAX[i], num = 1000, endpoint = False)
+        resultantMeans = []
+        for varValue in varSpace:
+            resultantMeans.append(np.mean(
+                                    modeloHarrisEOQ(*[
+                                        varValue 
+                                        if index == i else 
+                                        REFERENCE_VALUES_HARRIS_EOQ[index]*rng.uniform(H_GLOBAL_VMIN[index],H_GLOBAL_VMAX[index],GLOBAL_SIM_SIZE*10) 
+                                        for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))])
+                                        )
+                              )
+        fig, ax = plt.subplots(layout='constrained')
+        ax.set_xlabel(VAR_LABELS[i])
+        ax.set_ylabel('QOP')
+#        ax.set_title(r'$\varphi_{\alpha}(x_{\alpha})$')
+        ax.set_title(r'E[$Y|X_{\alpha}=x_{\alpha}$]')
+        ax.plot(varSpace,resultantMeans)
+
+        fig.savefig('./Results/Global/Phi_'+str(i)+'.png')
+        saveToLog('./Results/Global/Phi_'+str(i)+'.png','write')
+        plt.close(fig)
+
+        S_ind.append(np.var(resultantMeans)/outVariance)
+
+    print('{} \t Sum:{}'.format(S_ind,np.sum(S_ind)))
+
+#   Density based method
+    reference_KDE = stats.gaussian_kde(montecarloResults)
+    deltas = [0]*len(REFERENCE_VALUES_HARRIS_EOQ)
+    for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
+        varSpace = REFERENCE_VALUES_HARRIS_EOQ[i] * rng.uniform(H_GLOBAL_VMIN[i],H_GLOBAL_VMAX[i], size = 100)
+        innerStatistics = []
+        for varValue in varSpace:
+            harrisResults = modeloHarrisEOQ(*[
+                                    varValue 
+                                    if index == i else 
+                                    REFERENCE_VALUES_HARRIS_EOQ[index]*rng.uniform(H_GLOBAL_VMIN[index],H_GLOBAL_VMAX[index],GLOBAL_SIM_SIZE) 
+                                    for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))])
+            var_KDE = stats.gaussian_kde(harrisResults)
+            innerStatistics.append(integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),3000,outMean,limit=50)[0] +
+                                   integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),outMean,11000,limit=50)[0]
+                                   )
+        deltas[i] = 0.5*np.mean(innerStatistics)
+
+    print(deltas)
 
     return 0
 
