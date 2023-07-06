@@ -196,12 +196,12 @@ def createGeneralizedTornadoDiagram(posSensitivities,negSensitivities,fName):
     ax.set_yticks((1+np.arange(numVars)), labels = varN)
     ax.set_xlabel('$\Delta y$')
     ax.set_title('Generalized Tornado Diagram')
-    legendHiddenLine = [plt.Line2D([0], [0], color='darkgreen', lw=4, label = '$S_{+}$'),
-                        plt.Line2D([0], [0], color='limegreen', lw=4, label = '$S_{-}$'),
-                        plt.Line2D([0], [0], color='navy',      lw=4, label = '$S_{T+}$'),
-                        plt.Line2D([0], [0], color='royalblue', lw=4, label = '$S_{T-}$'),
-                        plt.Line2D([0], [0], color='darkorange',lw=4, label = '$S_{I+}$'),
-                        plt.Line2D([0], [0], color='gold',      lw=4, label = '$S_{I-}$')]
+    legendHiddenLine = [plt.Line2D([0], [0], color='darkgreen', lw=4, label = '$\phi_{+}$'),
+                        plt.Line2D([0], [0], color='limegreen', lw=4, label = '$\phi_{-}$'),
+                        plt.Line2D([0], [0], color='navy',      lw=4, label = '$\phi^T_{+}$'),
+                        plt.Line2D([0], [0], color='royalblue', lw=4, label = '$\phi^T_{-}$'),
+                        plt.Line2D([0], [0], color='darkorange',lw=4, label = '$\phi^I_{+}$'),
+                        plt.Line2D([0], [0], color='gold',      lw=4, label = '$\phi^I_{-}$')]
     ax.legend(handles = legendHiddenLine, loc = 'upper left')
     ax.spines['left'].set_visible(False)
     ax.spines['right'].set_visible(False)
@@ -365,8 +365,24 @@ def runGlobalAnalysis():
         np.savetxt('./MonteCarloSims/HarrisMonteCarlo_Results.txt',montecarloResults)
         saveToLog('./MonteCarloSims/HarrisMonteCarlo_Results.txt', 'write')        
 
-    sns.displot(montecarloResults, kind="kde", bw_adjust=10)
+    sns.displot(montecarloResults, kind="kde", bw_adjust=5)
+    ax = plt.gca()
+    tickerFormatter = ticker.ScalarFormatter( useMathText=True )
+    tickerFormatter.set_scientific(True)
+    tickerFormatter.set_powerlimits((-2,3))
+    ax.yaxis.set_major_formatter(tickerFormatter)
+    ax.set_ylabel(r'$f_{Y}(y)$')
+    ax.set_xlabel('y')
+    ax.set_title('Função de Densidade Empírica')
+    plt.savefig('./Results/Global/UncAnaPDF.png')
+
     sns.displot(montecarloResults,kind="ecdf")
+    ax = plt.gca()
+    ax.set_ylabel(r'$F_{Y}(y)$')
+    ax.set_xlabel('y')
+    ax.set_title('Função de Distribuição Acumulada')
+    plt.savefig('./Results/Global/UncAnaCDF.png')
+    saveToLog('./Results/Global/UncAnaCDF.png & ./Results/Global/UncAnaPDF.png','write')
 
     # Linear Regression Coeff
     tempA = np.concatenate([montecarloInputs,np.ones((len(montecarloResults),1))],axis=1)
@@ -379,6 +395,7 @@ def runGlobalAnalysis():
     outVariance = np.var(montecarloResults)
     outMean = np.mean(montecarloResults)
     outSTDev = np.sqrt(outVariance)
+    print('Média de Y = {:.2f}\t Desvio Padrão de Y = {:.2f}'.format(outMean,outSTDev))
 
     covInput = np.concatenate([montecarloResults.reshape((len(montecarloResults),1)), montecarloInputs],axis=1)
     covMatrix = np.cov(covInput,rowvar=False)
@@ -496,6 +513,8 @@ def runGlobalAnalysis():
 #   Density based method
     reference_KDE = stats.gaussian_kde(montecarloResults)
     deltas = [0]*len(REFERENCE_VALUES_HARRIS_EOQ)
+    integraLowerBound = (1-0.5*np.sign(np.min(montecarloResults)))*np.min(montecarloResults)
+    integralUpperBound = (1+0.5*np.sign(np.max(montecarloResults)))*np.max(montecarloResults)
     for i in range(len(REFERENCE_VALUES_HARRIS_EOQ)):
         varSpace = REFERENCE_VALUES_HARRIS_EOQ[i] * rng.uniform(H_GLOBAL_VMIN[i],H_GLOBAL_VMAX[i], size = 100)
         innerStatistics = []
@@ -506,8 +525,8 @@ def runGlobalAnalysis():
                                     REFERENCE_VALUES_HARRIS_EOQ[index]*rng.uniform(H_GLOBAL_VMIN[index],H_GLOBAL_VMAX[index],GLOBAL_SIM_SIZE) 
                                     for index in range(len(REFERENCE_VALUES_HARRIS_EOQ))])
             var_KDE = stats.gaussian_kde(harrisResults)
-            innerStatistics.append(integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),3000,outMean,limit=50)[0] +
-                                   integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),outMean,11000,limit=50)[0]
+            innerStatistics.append(integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),integraLowerBound,outMean,limit=50)[0] +
+                                   integrate.quad(lambda y: np.abs(reference_KDE.evaluate(y)-var_KDE.evaluate(y)),outMean,integralUpperBound,limit=50)[0]
                                    )
         deltas[i] = 0.5*np.mean(innerStatistics)
     np.savetxt('./Results/Global/Deltas.txt', deltas, fmt='%.8f')
