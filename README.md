@@ -4,8 +4,8 @@ For use with anothe model, insert the model on the Models file and alter the cod
 
 Code based on the following works:
 
-Sensitivity analysis: A review of recent advances by Borgonovo, Emanuele & Plischke, Elmar
+Sensitivity analysis: A review of recent advances by Borgonovo, Emanuele & Plischke, Elmar (https://doi.org/10.1016/j.ejor.2015.06.032)
 
-Why so many published sensitivity analyses are false: A systematic review of sensitivity analysis practices by Saltelli, Andrea et al.
+Why so many published sensitivity analyses are false: A systematic review of sensitivity analysis practices by Saltelli, Andrea et al. (https://doi.org/10.1016/j.envsoft.2019.01.012)
 
-Global Sensitivity Analysis by Saltelli et al.
+Global Sensitivity Analysis. The Primer by Saltelli et al. (http://www.andreasaltelli.eu/file/repository/Primer_Corrected_2022.pdf)
